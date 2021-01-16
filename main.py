@@ -12,7 +12,7 @@ def main():
         elif r.status_code==429:
             data = json.loads(r.text)
             print(Fore.RED+"\n [x] Rate limit (waiting "+str(data["retry_after"])+"ms)")
-            time.sleep(data["retry_after"])
+            time.sleep(data["retry_after"]/1000)
         else:
             print(Fore.RED+f"[x] Gift Code {n} unavailabe. {i} tries", end="\r")
     print(" ");print(Fore.LIGHTGREEN_EX+"\n                           > finished < ")
