@@ -6,7 +6,7 @@ Simple Python script that generates and checks if the generated gift code is ava
 ## Note
 This script is relatively slow because it makes a request to Discord's API to check if they work.
 
-The average time is 6 codes for each 10 minutes
+The average time is 6 codes per minute
 
 ## Requirements
 ``pip install -r requirements.txt``
